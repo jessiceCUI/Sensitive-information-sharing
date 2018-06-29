@@ -1,0 +1,72 @@
+syntax="proto3";
+
+option java_multiple_files = true;
+option java_package = "com.jessice.mscontroller";
+option java_outer_classname = "MsgShareControllerProto";
+option objc_class_prefix = "MST";
+
+package mscontroller;
+
+service MsgShareController {
+
+//一个简单的rpc
+rpc GetMatrix(UUrl) returns (Matrix) {}
+
+//服务端流式rpc
+ rpc ListMatrixs(RectangleUrl) returns (stream Matrix) {}
+ 
+ //客户端流式rpc
+rpc RecordUrl(stream UUrl) returns (UrlSummary) {}
+
+//双向流式rpc
+ rpc UrlChat(stream UrlNote) returns (stream UrlNote) {}
+
+}
+
+//请求地址的网址和文件id
+message UUrl{
+	string url=1;
+	string fileid=2;
+}
+//表示矩阵的两个点的UUrl
+message RectangleUrl{
+	UUrl lo=1;
+	UUrl hi=2;
+}
+//给定请求url而对应的矩阵，如果文件不存在，返回空
+message Matrix{
+	int32 Mx=1;
+	int32 My=2;
+	UUrl urlLocation=3;	
+}
+//矩阵表存在的数据库，相当于文件拓扑中对应文件应该返回的矩阵，对应表
+message MatrixDatabase {
+  repeated Matrix matrix = 1;
+}
+//UrlSummary包含接收到的点的数量，获得已知矩阵的数量，以及覆盖的总距离，和遍历所需要的时间
+message UrlSummary {
+  // The number of url received.接收到url的数量
+  int32 url_count = 1;
+
+  
+  //遍历路线时传递的已知矩阵的数量。
+  int32 matrix_count = 2;
+
+  // The distance covered in metres.距离以米为单位
+  int32 distance = 3;
+
+  // The duration of the traversal in seconds.遍历的持续时间以秒为单位
+  int32 elapsed_time = 4;
+}
+
+//
+
+message UrlNote {
+  // The location from which the message is sent.
+  UUrl urlLocation = 1;
+
+  // The message to be sent.
+  string messages = 2;
+}
+
+

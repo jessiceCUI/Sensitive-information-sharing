@@ -1,0 +1,23 @@
+2018-06-28 17:50:50,514-com.netty.handler.FileUploadClientHandler-nioEventLoopGroup-2-1- INFO: channelActive()文件已经读完 573
+2018-06-28 17:50:50,545-com.netty.handler.FileUploadClientHandler-nioEventLoopGroup-2-1- INFO: 长度：0
+2018-06-28 17:50:50,545-com.netty.handler.FileUploadClientHandler-nioEventLoopGroup-2-1- INFO: 文件长度：573,start:573,a:0,b:0,lastLength:0
+2018-06-28 17:50:50,545-com.netty.handler.FileUploadClientHandler-nioEventLoopGroup-2-1- INFO: 文件已经读完channelRead()--------0
+2018-06-28 17:50:50,545-com.netty.handler.FileUploadClientHandler-nioEventLoopGroup-2-1- INFO: 客户端结束传递文件channelInactive()
+2018-06-28 18:00:44,107-com.netty.handler.FileUploadClientHandler-nioEventLoopGroup-3-1- INFO: 服务端：channelActive()
+2018-06-28 18:00:44,467-com.netty.handler.FileUploadClientHandler-nioEventLoopGroup-2-1- INFO: channelActive()文件已经读完 10240
+2018-06-28 18:00:44,545-com.netty.handler.FileUploadClientHandler-nioEventLoopGroup-2-1- INFO: 长度：46075
+2018-06-28 18:00:44,545-com.netty.handler.FileUploadClientHandler-nioEventLoopGroup-2-1- INFO: 文件长度：56315,start:10240,a:46075,b:108,lastLength:10240
+2018-06-28 18:00:44,545-com.netty.handler.FileUploadClientHandler-nioEventLoopGroup-2-1- INFO: 长度：35835
+2018-06-28 18:00:44,545-com.netty.handler.FileUploadClientHandler-nioEventLoopGroup-2-1- INFO: 文件长度：56315,start:20480,a:35835,b:108,lastLength:10240
+2018-06-28 18:00:44,545-com.netty.handler.FileUploadClientHandler-nioEventLoopGroup-2-1- INFO: 长度：25595
+2018-06-28 18:00:44,545-com.netty.handler.FileUploadClientHandler-nioEventLoopGroup-2-1- INFO: 文件长度：56315,start:30720,a:25595,b:108,lastLength:10240
+2018-06-28 18:00:44,545-com.netty.handler.FileUploadClientHandler-nioEventLoopGroup-2-1- INFO: 长度：15355
+2018-06-28 18:00:44,545-com.netty.handler.FileUploadClientHandler-nioEventLoopGroup-2-1- INFO: 文件长度：56315,start:40960,a:15355,b:108,lastLength:10240
+2018-06-28 18:00:44,560-com.netty.handler.FileUploadClientHandler-nioEventLoopGroup-2-1- INFO: 长度：5115
+2018-06-28 18:00:44,560-com.netty.handler.FileUploadClientHandler-nioEventLoopGroup-2-1- INFO: 文件长度：56315,start:51200,a:5115,b:108,lastLength:5115
+2018-06-28 18:00:44,560-com.netty.handler.FileUploadClientHandler-nioEventLoopGroup-2-1- INFO: 长度：0
+2018-06-28 18:00:44,560-com.netty.handler.FileUploadClientHandler-nioEventLoopGroup-2-1- INFO: 文件长度：56315,start:56315,a:0,b:108,lastLength:0
+2018-06-28 18:00:44,560-com.netty.handler.FileUploadClientHandler-nioEventLoopGroup-2-1- INFO: 文件已经读完channelRead()--------0
+2018-06-28 18:00:44,576-com.netty.handler.FileUploadClientHandler-nioEventLoopGroup-2-1- INFO: 客户端结束传递文件channelInactive()
+2018-06-28 18:00:45,574-com.netty.handler.FileUploadClientHandler-nioEventLoopGroup-3-1- INFO: 服务端：channelInactive()
+2018-06-28 18:00:45,590-com.netty.handler.FileUploadClientHandler-nioEventLoopGroup-3-1- INFO: 服务端：channelInactive()
